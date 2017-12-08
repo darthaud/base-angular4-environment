@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "ng serve --host 0.0.0.0"
+    "start": "ng serve --host 0.0.0.0 --public front.localtest.me"
   },
   "dependencies": {
     "@angular/animations": "^5.0.0",
