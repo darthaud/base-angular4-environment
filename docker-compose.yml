@@ -1,0 +1,15 @@
+version: '2'
+services:
+  web:
+    build: docker
+    environment:
+      VIRTUAL_HOST: front.localtest.me
+      VIRTUAL_PORT: 4200
+    networks:
+      - nginx-domain-proxy
+    volumes:
+      - ./app:/app
+networks:
+  nginx-domain-proxy:
+    external:
+      name: nginx-domain-proxy
